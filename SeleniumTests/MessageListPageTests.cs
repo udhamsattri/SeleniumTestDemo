@@ -30,6 +30,14 @@ namespace SeleniumTests
         }
 
 
+        [TestMethod]
+        public void Verify_Hundred_Messages_On_MessageList_Page()
+        {
+            Pages.ListPage.Goto();
+            Assert.IsTrue(Pages.ListPage.IsAtHundredMessage());
+        }
+
+
         [TestCleanup]
         public void CleanUp()
         {
