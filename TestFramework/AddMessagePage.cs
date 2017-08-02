@@ -15,10 +15,10 @@ namespace TestFramework
 
         public bool IsAtAddMessagePage()
         {
-            var authorPage = new AddMessagePage();
+            var addMsgPage = new AddMessagePage();
             Browser.Wait(8);
-            PageFactory.InitElements(Browser.Driver, authorPage);
-            return authorPage.PageText == "Add New Message";
+            PageFactory.InitElements(Browser.Driver, addMsgPage);
+            return addMsgPage.PageText == "Add New Message";
         }
 
 
